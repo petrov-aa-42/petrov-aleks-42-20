@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ARKI\\source\\repos\\petrov-aleks-42-20\\petrovkt42-20\\petrovkt42-20.csproj": {}
+    "C:\\Users\\j-classroom\\Source\\Repos\\petrov-aleks-42-20\\petrovkt42-20\\petrovkt42-20.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ARKI\\source\\repos\\petrov-aleks-42-20\\petrovkt42-20\\petrovkt42-20.csproj": {
+    "C:\\Users\\j-classroom\\Source\\Repos\\petrov-aleks-42-20\\petrovkt42-20\\petrovkt42-20.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ARKI\\source\\repos\\petrov-aleks-42-20\\petrovkt42-20\\petrovkt42-20.csproj",
+        "projectUniqueName": "C:\\Users\\j-classroom\\Source\\Repos\\petrov-aleks-42-20\\petrovkt42-20\\petrovkt42-20.csproj",
         "projectName": "petrovkt42-20",
-        "projectPath": "C:\\Users\\ARKI\\source\\repos\\petrov-aleks-42-20\\petrovkt42-20\\petrovkt42-20.csproj",
-        "packagesPath": "C:\\Users\\ARKI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ARKI\\source\\repos\\petrov-aleks-42-20\\petrovkt42-20\\obj\\",
+        "projectPath": "C:\\Users\\j-classroom\\Source\\Repos\\petrov-aleks-42-20\\petrovkt42-20\\petrovkt42-20.csproj",
+        "packagesPath": "C:\\Users\\j-classroom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\j-classroom\\Source\\Repos\\petrov-aleks-42-20\\petrovkt42-20\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\vs2\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ARKI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\j-classroom\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -73,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
