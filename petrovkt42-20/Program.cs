@@ -1,5 +1,7 @@
+using Microsoft.EntityFrameworkCore;
 using NLog;
 using NLog.Web;
+using petrovkt42_20.Database;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,7 +14,8 @@ try
     builder.Host.UseNLog();
     // Add services to the container.
 
-
+    builder.Services.AddDbContext<PrepodDbContext>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
     builder.Services.AddControllers();
     // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
