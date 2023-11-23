@@ -4,7 +4,7 @@ using petrovkt42_20.Database;
 using Microsoft.EntityFrameworkCore;
 using System.Net;
 using petrovkt42_20.ServiceInterfaces;
-
+using Microsoft.AspNetCore.Diagnostics;
 
 var builder = WebApplication.CreateBuilder(args);
 var logger = LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
@@ -33,7 +33,7 @@ try
         app.UseSwaggerUI();
     }
 
-   
+    app.UseMiddleware<ExceptionHandlerMiddleware>();
     app.UseAuthorization();
     app.MapControllers();
     app.Run();
