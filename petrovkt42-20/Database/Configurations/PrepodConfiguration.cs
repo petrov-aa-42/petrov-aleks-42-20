@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using petrovkt42_20.Database.Helpers;
 using petrovkt42_20.Models;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace petrovkt42_20.Database.Configurations
 {
@@ -54,6 +55,10 @@ namespace petrovkt42_20.Database.Configurations
             builder.ToTable(TableName)
                 .HasIndex(p => p.KafedraId, $"idx_{TableName}_fk_f_kafedra_id");
 
+            //Добавим явную автоподгрузку связанной сущности
+            builder.Navigation(p => p.Kafedra)
+                .AutoInclude();
+
             builder.Property(p => p.DegreeId)
                 .HasColumnName("degree_id")
                 .HasComment("Индетификатор степени");
@@ -68,6 +73,9 @@ namespace petrovkt42_20.Database.Configurations
             builder.ToTable(TableName)
                 .HasIndex(p => p.DegreeId, $"idx_{TableName}_fk_f_degree_id");
 
+            //Добавим явную автоподгрузку связанной сущности
+            builder.Navigation(p => p.Degree)
+                .AutoInclude();
         }
     }
 }
